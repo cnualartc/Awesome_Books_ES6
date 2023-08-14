@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  border: 2px solid grey;
+}
+
+.logo {
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.menu-item {
+  display: inline;
+  padding: 10px 20px;
+}
+
+.menu-item a,
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.date-container {
+  height: 20px;
+  display: flex;
+  justify-content: end;
+}
+
+#date {
+  margin-right: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1,
+.title {
+  margin: 50px 0;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.books-contain {
+  width: 90%;
+  height: 300px;
+  border: 2px solid gray;
+  overflow: scroll;
+}
+
+.books-container {
+  padding: 0;
+}
+
+div.books-contain li.books-list:nth-child(odd) {
+  background-color: #e6ebeb;
+}
+
+.books-list {
+  list-style: none;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.name,
+.author,
+.submit-btn {
+  height: 40px;
+  margin-bottom: 20px;
+  min-width: 500px;
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: end;
+}
+
+.add-book {
+  padding: 0 10px;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  border: 2px solid grey;
+}
+
+footer p {
+  padding: 20px 30px;
+}
+
+.contact-info {
+  font-size: 1.5em;
+}
+
+.hide-list,
+.hide-form,
+.hide-contact {
+  display: none;
+}
